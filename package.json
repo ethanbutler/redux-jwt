@@ -1,0 +1,59 @@
+{
+  "name": "Redux-JWT",
+  "version": "1.0.0",
+  "description": "Redux store for managing JWT-based authentication.",
+  "main": "index.js",
+  "repository": "https://github.com/ethanbutler/redux-jwt",
+  "author": "Ethan Butler",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "mocha --require babel-register --require mock-local-storage",
+    "demo": "npm run build && cd demo && webpack && node index.js",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chalk": "^2.3.0",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jsonwebtoken": "^8.1.0",
+    "mocha": "^4.0.1",
+    "mock-local-storage": "^1.0.5",
+    "moxios": "^0.4.0",
+    "path": "^0.12.7",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "sequelize": "^4.22.7",
+    "sqlite3": "^3.1.13",
+    "uglify-es": "^3.1.10",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "query-string": "^5.0.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  }
+}
